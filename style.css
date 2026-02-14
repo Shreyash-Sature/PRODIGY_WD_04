@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0f1a, #111827);
+    color: #e5e7eb;
+    overflow-x: hidden;
+}
+
+/* Background Glow */
+.background-glow {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99,102,241,0.4), transparent);
+    top: -150px;
+    right: -150px;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: #6366f1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6366f1;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    min-height: 90vh;
+}
+
+.hero-left {
+    max-width: 600px;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.hero-left h2 {
+    font-size: 24px;
+    margin: 10px 0 20px 0;
+    color: #6366f1;
+}
+
+.tagline {
+    color: #9ca3af;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.skill-tags {
+    margin-bottom: 25px;
+}
+
+.skill-tags span {
+    display: inline-block;
+    background: rgba(99,102,241,0.2);
+    color: #6366f1;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 5px 5px 5px 0;
+    font-size: 14px;
+}
+
+.hero-right img {
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(99,102,241,0.4);
+}
+
+/* Glass Sections */
+.glass-section {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.05);
+    margin: 60px 10%;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Projects */
+.section-title {
+    text-align: center;
+    margin: 80px 0 40px 0;
+    font-size: 32px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 10%;
+}
+
+.project-card {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: rgba(99,102,241,0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 80px;
+    color: #9ca3af;
+}
